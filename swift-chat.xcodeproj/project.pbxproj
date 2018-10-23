@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		302970D1E6D6F27D51B8F938 /* Pods_swift_chat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A8A407078534AA14728153C5 /* Pods_swift_chat.framework */; };
+		525371E4217F98920062584A /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525371E3217F98920062584A /* GradientView.swift */; };
+		525371E7217FA8FC0062584A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525371E6217FA8FC0062584A /* Constants.swift */; };
+		525371EB217FB41C0062584A /* LoginCV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525371EA217FB41C0062584A /* LoginCV.swift */; };
+		525371ED217FB66B0062584A /* createAccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525371EC217FB66B0062584A /* createAccountVC.swift */; };
 		52A24738217E71350008AF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A24737217E71350008AF04 /* AppDelegate.swift */; };
 		52A2473D217E71350008AF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A2473B217E71350008AF04 /* Main.storyboard */; };
 		52A2473F217E71350008AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A2473E217E71350008AF04 /* Assets.xcassets */; };
@@ -19,6 +23,10 @@
 
 /* Begin PBXFileReference section */
 		1BDF39E8990EF154F6171910 /* Pods-swift-chat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swift-chat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swift-chat/Pods-swift-chat.debug.xcconfig"; sourceTree = "<group>"; };
+		525371E3217F98920062584A /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		525371E6217FA8FC0062584A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		525371EA217FB41C0062584A /* LoginCV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCV.swift; sourceTree = "<group>"; };
+		525371EC217FB66B0062584A /* createAccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = createAccountVC.swift; sourceTree = "<group>"; };
 		52A24734217E71350008AF04 /* swift-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A24737217E71350008AF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A2473C217E71350008AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525371E5217FA8E70062584A /* Utillities */ = {
+			isa = PBXGroup;
+			children = (
+				525371E6217FA8FC0062584A /* Constants.swift */,
+			);
+			path = Utillities;
+			sourceTree = "<group>";
+		};
 		52A2472B217E71350008AF04 = {
 			isa = PBXGroup;
 			children = (
@@ -67,6 +83,7 @@
 		52A24736217E71350008AF04 /* swift-chat */ = {
 			isa = PBXGroup;
 			children = (
+				525371E5217FA8E70062584A /* Utillities */,
 				52A24750217E793B0008AF04 /* Model */,
 				52A2474F217E79320008AF04 /* View */,
 				52A2474E217E79220008AF04 /* Controller */,
@@ -95,6 +112,8 @@
 			children = (
 				52A24751217E79B80008AF04 /* ChatVC.swift */,
 				52A24753217E79CF0008AF04 /* ChannelVC.swift */,
+				525371EA217FB41C0062584A /* LoginCV.swift */,
+				525371EC217FB66B0062584A /* createAccountVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -102,6 +121,7 @@
 		52A2474F217E79320008AF04 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				525371E3217F98920062584A /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -251,8 +271,12 @@
 			files = (
 				52A24754217E79CF0008AF04 /* ChannelVC.swift in Sources */,
 				52A24752217E79B80008AF04 /* ChatVC.swift in Sources */,
+				525371ED217FB66B0062584A /* createAccountVC.swift in Sources */,
+				525371E4217F98920062584A /* GradientView.swift in Sources */,
 				52A24738217E71350008AF04 /* AppDelegate.swift in Sources */,
 				52A2474D217E728A0008AF04 /* SWRevealViewController.m in Sources */,
+				525371EB217FB41C0062584A /* LoginCV.swift in Sources */,
+				525371E7217FA8FC0062584A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

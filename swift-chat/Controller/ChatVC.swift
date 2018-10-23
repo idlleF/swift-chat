@@ -21,4 +21,8 @@ class ChatVC: UIViewController {
         self.view.addGestureRecognizer(self.revealViewController().tapGestureRecognizer())
     }
     
+    @IBAction func loginBtnPressed(_ sender: Any) {
+    }
+    
+    
 }
