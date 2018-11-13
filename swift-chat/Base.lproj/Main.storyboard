@@ -175,6 +175,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Pnk-5T-hU3" id="wLe-Ts-Emw"/>
+                        <outlet property="userImg" destination="Xcm-hH-uoJ" id="UMM-Ec-e0n"/>
                         <segue destination="ZhE-7f-sfK" kind="show" identifier="toLogin" id="xLW-if-a1E"/>
                     </connections>
                 </viewController>
@@ -473,7 +474,6 @@
                     <connections>
                         <outlet property="emailTxt" destination="a6M-cb-zik" id="3lq-Ff-Q0o"/>
                         <outlet property="passTxt" destination="jkE-5Y-1mF" id="PCD-El-plj"/>
-                        <outlet property="spinner" destination="8BT-za-ynp" id="6ia-YQ-pxa"/>
                         <outlet property="userImg" destination="LLR-tk-0EF" id="vMs-2u-eqC"/>
                         <outlet property="usernameTxt" destination="iN9-PI-Sbo" id="gfV-lO-to8"/>
                         <segue destination="zXf-9r-VPz" kind="unwind" identifier="unwindToChannel" unwindAction="prepareForUnwindWithSegue:" id="K16-vU-YUJ"/>

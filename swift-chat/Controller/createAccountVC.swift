@@ -14,7 +14,7 @@ class createAccountVC: UIViewController {
     @IBOutlet weak var emailTxt: UITextField!
     @IBOutlet weak var passTxt: UITextField!
     @IBOutlet weak var userImg: UIImageView!
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView?
     
     var avatarName = "profileDefault"
     var avatarColor = "[0.5, 0.5, 0.5, 1]"
