@@ -34,10 +34,11 @@ class ChannelVC: UIViewController {
         if AuthService.instance.isLoggedIn {
             loginBtn.setTitle(UserDataService.instance.name, for: .normal)
             userImg.image = UIImage(named: UserDataService.instance.avatarName)
+            userImg.backgroundColor = UserDataService.instance.returnUIColor(components: UserDataService.instance.avatarColor)
         } else {
             loginBtn.setTitle("Login", for: .normal)
-            userImg.image = UIImage(named: "menuProfileIcon")
-            userImg.backgroundColor = UIColor.clear
+            self.userImg.image = UIImage(named: "menuProfileIcon")
+            self.userImg.backgroundColor = UIColor.clear
         }
     }
     
