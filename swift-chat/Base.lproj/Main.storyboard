@@ -121,7 +121,7 @@
                                 <rect key="frame" x="0.0" y="132" width="375" height="420"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="fDx-Gl-tsv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="fDx-Gl-tsv" customClass="ChannelCell" customModule="swift_chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDx-Gl-tsv" id="ojT-E5-gVG">
@@ -141,6 +141,9 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="channelName" destination="CVW-fv-Fms" id="a6J-Ug-Ekb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -232,6 +235,9 @@
                                         <real key="value" value="5"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="logginPressed:" destination="ZhE-7f-sfK" eventType="touchUpInside" id="OB8-NA-2cp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pVv-zO-mVD">
                                 <rect key="frame" x="62.5" y="326" width="250" height="30"/>
@@ -286,11 +292,17 @@
                                     </view>
                                 </subviews>
                             </stackView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="jXD-Sp-B7T">
+                                <rect key="frame" x="169" y="215" width="37" height="37"/>
+                                <color key="color" red="0.25882352939999997" green="0.3294117647" blue="0.72549019609999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ouC-DV-Ebo" firstAttribute="top" secondItem="Vyb-i0-68w" secondAttribute="top" constant="60" id="2NX-R3-Nsv"/>
+                            <constraint firstItem="jXD-Sp-B7T" firstAttribute="centerX" secondItem="R3M-kS-wOH" secondAttribute="centerX" id="9WH-oi-dhd"/>
                             <constraint firstItem="pVv-zO-mVD" firstAttribute="centerX" secondItem="R3M-kS-wOH" secondAttribute="centerX" id="LII-Ti-KXr"/>
+                            <constraint firstItem="jXD-Sp-B7T" firstAttribute="centerY" secondItem="R3M-kS-wOH" secondAttribute="centerY" constant="-100" id="Mef-vu-0Tp"/>
                             <constraint firstItem="A3l-LW-p77" firstAttribute="centerX" secondItem="R3M-kS-wOH" secondAttribute="centerX" id="UvW-cc-5Gn"/>
                             <constraint firstItem="pVv-zO-mVD" firstAttribute="top" secondItem="A3l-LW-p77" secondAttribute="bottom" id="Vuy-eN-wdJ"/>
                             <constraint firstItem="iA4-cY-1fE" firstAttribute="centerX" secondItem="R3M-kS-wOH" secondAttribute="centerX" id="XNi-pS-1Lm"/>
@@ -303,6 +315,9 @@
                         <viewLayoutGuide key="safeArea" id="Vyb-i0-68w"/>
                     </view>
                     <connections>
+                        <outlet property="passwordTxt" destination="Lyc-7E-GuU" id="vTS-VQ-Ttr"/>
+                        <outlet property="spinner" destination="jXD-Sp-B7T" id="6Oe-xF-D2B"/>
+                        <outlet property="usernameTxt" destination="G3T-rs-LbG" id="TJp-7Z-QHb"/>
                         <segue destination="F5c-ki-U2T" kind="show" identifier="toCreateAccount" id="dYf-DU-1uT"/>
                     </connections>
                 </viewController>
