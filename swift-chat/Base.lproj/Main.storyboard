@@ -121,7 +121,7 @@
                                 <rect key="frame" x="0.0" y="132" width="375" height="420"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="channelCell" id="fDx-Gl-tsv" customClass="ChannelCell" customModule="swift_chat" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="channelCell" id="fDx-Gl-tsv" customClass="ChannelCell" customModule="swift_chat" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fDx-Gl-tsv" id="ojT-E5-gVG">
@@ -142,7 +142,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="channelName" destination="CVW-fv-Fms" id="a6J-Ug-Ekb"/>
+                                            <outlet property="channelName" destination="CVW-fv-Fms" id="x0o-ey-M1C"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -178,6 +178,7 @@
                     </view>
                     <connections>
                         <outlet property="loginBtn" destination="Pnk-5T-hU3" id="wLe-Ts-Emw"/>
+                        <outlet property="tableView" destination="vFc-EI-A4s" id="qmU-1k-6D9"/>
                         <outlet property="userImg" destination="Xcm-hH-uoJ" id="UMM-Ec-e0n"/>
                         <segue destination="ZhE-7f-sfK" kind="show" identifier="toLogin" id="xLW-if-a1E"/>
                     </connections>

@@ -10,7 +10,7 @@ import UIKit
 
 class ChannelCell: UITableViewCell {
 
-    @IBOutlet weak var channelName: NSLayoutConstraint!
+    @IBOutlet weak var channelName: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,8 +21,15 @@ class ChannelCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
 
         if selected {
-            
+            self.layer.backgroundColor = UIColor(white: 1, alpha: 0.2).cgColor
+        } else {
+            self.layer.backgroundColor = UIColor.clear.cgColor
         }
+    }
+    
+    func configureCell(channel: Channel) {
+        let title = channel.channelTitle ?? ""
+        channelName.text = "#\(title)"
     }
 
 }
