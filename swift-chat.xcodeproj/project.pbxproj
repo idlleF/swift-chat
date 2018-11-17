@@ -23,6 +23,8 @@
 		528BAC57219F71EF001285C0 /* MessageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528BAC56219F71EF001285C0 /* MessageService.swift */; };
 		528BAC59219F724C001285C0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528BAC58219F724C001285C0 /* Channel.swift */; };
 		528BAC5B219F7BED001285C0 /* ChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528BAC5A219F7BED001285C0 /* ChannelCell.swift */; };
+		528BAC6021A02C80001285C0 /* addChannleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 528BAC5E21A02C80001285C0 /* addChannleVC.swift */; };
+		528BAC6121A02C80001285C0 /* addChannleVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 528BAC5F21A02C80001285C0 /* addChannleVC.xib */; };
 		52A24738217E71350008AF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A24737217E71350008AF04 /* AppDelegate.swift */; };
 		52A2473D217E71350008AF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A2473B217E71350008AF04 /* Main.storyboard */; };
 		52A2473F217E71350008AF04 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A2473E217E71350008AF04 /* Assets.xcassets */; };
@@ -49,6 +51,8 @@
 		528BAC56219F71EF001285C0 /* MessageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageService.swift; sourceTree = "<group>"; };
 		528BAC58219F724C001285C0 /* Channel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Channel.swift; path = "swift-chat/Services/Channel.swift"; sourceTree = SOURCE_ROOT; };
 		528BAC5A219F7BED001285C0 /* ChannelCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelCell.swift; sourceTree = "<group>"; };
+		528BAC5E21A02C80001285C0 /* addChannleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addChannleVC.swift; sourceTree = "<group>"; };
+		528BAC5F21A02C80001285C0 /* addChannleVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = addChannleVC.xib; sourceTree = "<group>"; };
 		52A24734217E71350008AF04 /* swift-chat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "swift-chat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A24737217E71350008AF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A2473C217E71350008AF04 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -97,6 +101,7 @@
 		528BAC55219E0B91001285C0 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
+				528BAC5F21A02C80001285C0 /* addChannleVC.xib */,
 				528BAC52219E0B82001285C0 /* ProfileVC.xib */,
 			);
 			path = XIBs;
@@ -158,6 +163,7 @@
 				525371EC217FB66B0062584A /* createAccountVC.swift */,
 				523876FC219B58E300B78FE3 /* AvatarPickerVC.swift */,
 				528BAC51219E0B82001285C0 /* ProfileVC.swift */,
+				528BAC5E21A02C80001285C0 /* addChannleVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -262,6 +268,7 @@
 			files = (
 				528BAC54219E0B82001285C0 /* ProfileVC.xib in Resources */,
 				52A24742217E71350008AF04 /* LaunchScreen.storyboard in Resources */,
+				528BAC6121A02C80001285C0 /* addChannleVC.xib in Resources */,
 				52A2473F217E71350008AF04 /* Assets.xcassets in Resources */,
 				52A2473D217E71350008AF04 /* Main.storyboard in Resources */,
 			);
@@ -322,6 +329,7 @@
 				528BAC53219E0B82001285C0 /* ProfileVC.swift in Sources */,
 				528BAC5B219F7BED001285C0 /* ChannelCell.swift in Sources */,
 				52A24754217E79CF0008AF04 /* ChannelVC.swift in Sources */,
+				528BAC6021A02C80001285C0 /* addChannleVC.swift in Sources */,
 				523876FD219B58E300B78FE3 /* AvatarPickerVC.swift in Sources */,
 				5279BA0721836C5700E0FCB2 /* RoundedButton.swift in Sources */,
 				528BAC59219F724C001285C0 /* Channel.swift in Sources */,
