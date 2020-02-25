@@ -1,0 +1,25 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'rest' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for rest
+  
+  pod 'Alamofire', '~> 4.5'
+  pod 'SwiftyJSON'
+  #pod 'Heimdallr', '~>3.6.1'
+  pod 'p2.OAuth2', '~> 4.0'
+
+  target 'restTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'restUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end
